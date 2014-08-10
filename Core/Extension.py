@@ -7,7 +7,7 @@ class Extension(object):
     def getPrefix(self):
         return self._prefix
 
-    def run(self, arg):
+    def handleInput(self, arg):
         raise NotImplementedError
 
     def introduce(self):
@@ -15,3 +15,6 @@ class Extension(object):
 
     def loadConfiguration(self, config):
         raise NotImplementedError
+
+    def showHelp(self, args):
+        print("No help page found for this extension")

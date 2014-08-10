@@ -38,7 +38,7 @@ class CoreLoop(object):
             if isinstance(instance, Extension):
                 self._extensions[extension] = instance
             else:
-                raise AttributeError
+                raise TypeError
 
             if extension.lower() in extensionConfig:
                 self._extensions[extension].loadConfiguration(extensionConfig[extension.lower()])
@@ -51,4 +51,4 @@ class CoreLoop(object):
         self._extensions[self._current_extension].introduce()
         while True:
             usrInput = input(self._extensions[self._current_extension].getPrefix() + ' ')
-            self._extensions[self._current_extension].run(usrInput)
+            self._extensions[self._current_extension].handleInput(usrInput)
