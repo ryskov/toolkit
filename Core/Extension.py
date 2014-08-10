@@ -8,7 +8,7 @@ class Extension(object):
         return self._prefix
 
     def run(self, arg):
-        raise NotImplsementedError
+        raise NotImplementedError
 
-    def splash(self):
+    def introduce(self):
         raise NotImplementedError

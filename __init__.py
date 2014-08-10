@@ -1,1 +1,1 @@
-__all__ = ['Core']
+__all__ = ['Core', 'Extensions']

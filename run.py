@@ -5,5 +5,5 @@ from Extensions.Platform.Platform import Platform
 
 platform = Platform()
 
-loop = CoreLoop(platform)
+loop = CoreLoop('config.yaml')
 loop.run()
