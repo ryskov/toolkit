@@ -12,3 +12,6 @@ class Extension(object):
 
     def introduce(self):
         raise NotImplementedError
+
+    def loadConfiguration(self, config):
+        raise NotImplementedError

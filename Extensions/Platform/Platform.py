@@ -13,3 +13,7 @@ class Platform(Extension):
 
     def introduce(self):
         CoreInvoker.execute(PrintStringCommand('Welcome to Toolkit! A python-based tool-development platform\n\n'))
+
+    def loadConfiguration(self, config):
+        self._prefix = config['prefix']
+

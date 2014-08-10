@@ -1,1 +1,1 @@
-__all__ = ["CoreCommand", "CoreInvoker", "CoreLoop", "Extension"]
+__all__ = ["CoreCommand", "CoreInvoker", "CoreLoop", "Extension", "Exception"]

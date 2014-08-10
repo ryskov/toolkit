@@ -1,0 +1,2 @@
+class CoreErrorException(Exception):
+    pass

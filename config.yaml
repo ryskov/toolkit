@@ -1,2 +1,10 @@
 core:
     startup_extension: "Platform"
+    suppress_core_warnings: false
+
+extensions:
+
+    extensions: [ 'Platform' ]
+
+    platform:
+        prefix: "#Toolkit~:"
