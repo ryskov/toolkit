@@ -2,8 +2,8 @@
 
 import yaml
 import os
+
 from Core.Extension import Extension
-from Core.Exception.CoreErrorException import CoreErrorException
 from Core.Exception.ConfigurationErrorException import ConfigurationErrorException
 
 class CoreLoop(object):
