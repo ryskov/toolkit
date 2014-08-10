@@ -2,5 +2,5 @@
 
 from Core.CoreLoop import CoreLoop
 
-loop = CoreLoop('config.yaml')
+loop = CoreLoop.createLoop('config.yaml')
 loop.run()
